@@ -1,18 +1,25 @@
-// 020-TestCase-2.cpp
-// Source: https://github.com/catchorg/Catch2/blob/master/examples/020-TestCase-2.cpp
-
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#define CATCH_CONFIG_MAIN  
 
 #include "catch_amalgamated.hpp"
+#include "reverse_string.hpp"
 #include <iostream>
 
-// INSERT YOUR TEST CASES HERE
-// As well as your files
-
-TEST_CASE( "Ex1", "[examples]" ) {
-    REQUIRE( 1 == 1 );
+TEST_CASE("Ex1", "[a_word]")
+{
+    REQUIRE("tobor" == reverse_string::reverse_string("robot"));
 }
 
-TEST_CASE( "Ex2", "[examples]" ) {
-    REQUIRE( 1 == 1 );
+TEST_CASE("Ex2","[a_capitalized_word]")
+{
+    REQUIRE("nemaR" == reverse_string::reverse_string("Ramen"));
+}
+
+TEST_CASE("Ex3", "[a_sentence_with_punctuation]")
+{
+    REQUIRE("!yrgnuh m'I" == reverse_string::reverse_string("I'm hungry!"));
+}
+
+TEST_CASE("Ex4", "[a_palindrome]")
+{
+   REQUIRE("racecar" == reverse_string::reverse_string("racecar"));
 }
