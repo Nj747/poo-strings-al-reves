@@ -1,10 +1,11 @@
-# Cadena de caracteres
+# Cadena de caracteres ⛓
 
-### Enunciado
+### Enunciado 📋
 Invertir una cadena dada. Por ejemplo si se ingresara "cool", el resultado deberá ser "looc".
 
+---
 
-### Instrucciones para el estudiante
+### Instrucciones para el estudiante 📚
 Para la resolución del enunciado **NO debe modificar ninguno de los siguientes archivos**:
 * `catch_amalgamated.cpp`
 * `catch_amalgamated.hpp`
@@ -13,8 +14,10 @@ Para la resolución del enunciado **NO debe modificar ninguno de los siguientes 
 
 El estudiante SOLAMENTE deberá agregar un archivo llamado `reverse_string.hpp` que contenga la resolución del ejercicio.
 
-### Comando de configuración
+---
+
+### Comando de configuración ⚙
 `make`
 
-### Comando de ejecución
+### Comando de ejecución 👩‍💻
 `./app <test_name>`
